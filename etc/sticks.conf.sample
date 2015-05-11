@@ -1,0 +1,23 @@
+[DEFAULT]
+# Tracking plugin used by component, see entry_points in setup.cfg
+tracking_plugin=redmine
+sticks_role_name=sticks
+
+[service_credentials]
+os_tenant_name = service
+os_password = NONE
+os_username = NONE
+
+[keystone_authtoken]
+signing_dir = /var/cache/sticks
+admin_tenant_name = service
+admin_password = NONE
+admin_user = NONE
+auth_protocol = http
+auth_port = 5000
+auth_host = localhost
+
+[redmine]
+redmine_url=URL
+redmine_login=NONE
+redmine_password=NONE
