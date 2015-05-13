@@ -53,10 +53,12 @@ class TicketsController(rest.RestController):
 
     @pecan.expose()
     def put(self):
+        """ Modify a ticket """
         core.response.status = 204
         return
 
     @pecan.expose()
     def delete(self):
+        """ Delete a ticket """
         core.response.status = 200
         return

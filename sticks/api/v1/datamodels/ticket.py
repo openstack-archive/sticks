@@ -44,6 +44,12 @@ class TicketResource(base.Base):
         return self.as_dict_from_keys(['title', 'id', 'project', 'start_date',
                                        'status'])
 
+    @classmethod
+    def sample(cls):
+        sample = cls(project='test_project',
+                     title='Ticket incident')
+        return sample
+
 
 class TicketResourceCollection(base.Base):
     """A list of Tickets."""

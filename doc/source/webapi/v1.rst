@@ -1,0 +1,16 @@
+======================
+Sticks REST API (v1)
+======================
+
+
+Tickets
+=======
+
+.. rest-controller:: sticks.api.v1.controllers.ticket:TicketsController
+   :webprefix: /v1/tickets
+
+.. autotype:: sticks.api.v1.datamodels.ticket.TicketResource
+   :members:
+
+.. autotype:: sticks.api.v1.datamodels.ticket.TicketResourceCollection
+   :members:
