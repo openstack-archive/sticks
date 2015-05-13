@@ -1,0 +1,8 @@
+Verified+2: Jenkins
+Code-Review+2: Anthony Michon <anthony.michon@eurogiciel.fr>
+Workflow+1: Anthony Michon <anthony.michon@eurogiciel.fr>
+Submitted-by: Jenkins
+Submitted-at: Wed, 13 May 2015 09:25:59 +0000
+Reviewed-on: https://review.openstack.org/182580
+Project: stackforge/sticks
+Branch: refs/heads/master
