@@ -132,7 +132,7 @@ function cleanup_sticks {
     rm -rf $STICKS_AUTH_CACHE_DIR/*
     rm -rf $STICKS_CONF_DIR/*
     if [[ "$ENABLED_SERVICES" =~ "sticks-dashboard" ]]; then
-        rm $HORIZON_DIR/openstack_dashboard/local/enabled/_60_sticks.py
+        rm -f $HORIZON_DIR/openstack_dashboard/local/enabled/_60_sticks.py
     fi
 }
 
