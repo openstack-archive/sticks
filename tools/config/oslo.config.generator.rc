@@ -1,0 +1,2 @@
+export STICKS_CONFIG_GENERATOR_EXTRA_LIBRARIES='oslo.messaging'
+export STICKS_CONFIG_GENERATOR_EXTRA_MODULES=keystoneclient.middleware.auth_token
