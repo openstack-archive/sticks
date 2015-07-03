@@ -31,6 +31,9 @@ class TicketResource(base.Base):
     id = wtypes.text
     """Id of the ticket."""
 
+    description = wtypes.text
+    """Description of the ticket."""
+
     project = wtypes.text
     """Associated project of the ticket."""
 
@@ -40,9 +43,13 @@ class TicketResource(base.Base):
     status = wtypes.text
     """Status."""
 
+    category = wtypes.text
+    """Category ."""
+
     def as_dict(self):
         return self.as_dict_from_keys(['title', 'id', 'project', 'start_date',
-                                       'status'])
+                                       'status', 'description', 'category'])
+
 
     @classmethod
     def sample(cls):
