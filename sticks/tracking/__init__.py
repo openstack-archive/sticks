@@ -23,7 +23,7 @@ from oslo.config import cfg
 from oslo import messaging
 
 from sticks.client import keystone_client
-from sticks.openstack.common._i18n import _  # noqa
+from sticks.openstack.common.gettextutils import _  # noqa
 from sticks.openstack.common import log
 
 
