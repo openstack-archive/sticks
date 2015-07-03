@@ -16,7 +16,7 @@
 
 from oslo.config import cfg
 
-from sticks.openstack.common._i18n import _  # noqa
+from sticks.openstack.common.gettextutils import _  # noqa
 
 keystone_opts = [
     cfg.StrOpt('auth_strategy', default='keystone',
