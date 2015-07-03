@@ -118,14 +118,19 @@ class TrackingBase(object):
         return [messaging.Target(topic=topic)
                 for topic in cfg.CONF.notification_topics]
 
+    def get_project(self, project_id):
+
+        if self.kc is None:
+            self.kc = keystone_client.Client()
+
+        return self.kc.project_get(project_id)
+
     def process_notification(self, ctxt, publisher_id, event_type, payload,
                              metadata):
         """ Process events"""
         # Default action : create project
         if event_type == self._ROLE_ASSIGNMENT_CREATED:
-            if self.kc is None:
-                self.kc = keystone_client.Client()
-            project = self.kc.project_get(payload['project'])
+            project = self.get_project(payload['project'])
             if self._has_sticks_role(payload['user'],
                                      payload['role'],
                                      payload['project']):
