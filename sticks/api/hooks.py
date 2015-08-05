@@ -88,8 +88,16 @@ class AdminAuthHook(hooks.PecanHook):
     rejects the request if the api is not public.
 
     """
+
+    def is_path_in_routes(self, path):
+        for p in self.member_routes:
+            if path.startswith(p):
+                return True
+        return False
+
     def before(self, state):
         ctx = state.request.context
 
-        if not ctx.is_admin and not ctx.is_public_api:
-            raise exc.HTTPForbidden()
+        if not ctx.is_admin and not ctx.is_public_api and \
+                not self.is_path_in_routes(state.request.path):
+                raise exc.HTTPForbidden()
