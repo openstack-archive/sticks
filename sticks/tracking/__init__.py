@@ -68,7 +68,7 @@ class TrackingBase(object):
 
     def _has_sticks_role(self, user_id, role_id, project_id):
         """
-        Evaluates whether this user has ikare role. Returns
+        Evaluates whether this user has sticks role. Returns
         ``True`` or ``False``.
         """
         if self.kc is None:

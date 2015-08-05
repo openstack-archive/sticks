@@ -24,4 +24,5 @@ app = {
     'debug': True,
     'enable_acl': False,
     'acl_public_routes': ['/', '/v1'],
+    'member_routes': ['/v1/ticket', ]
 }
