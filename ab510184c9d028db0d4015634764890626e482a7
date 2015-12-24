@@ -1,0 +1,10 @@
+Code-Review+1: Clint Adams <clint@gcfm.net>
+Code-Review+1: venkatamahesh <venkatamaheshkotha@gmail.com>
+Code-Review+2: Anthony Michon <anthony.michon@eurogiciel.fr>
+Workflow+1: Anthony Michon <anthony.michon@eurogiciel.fr>
+Verified+2: Jenkins
+Submitted-by: Jenkins
+Submitted-at: Thu, 24 Dec 2015 08:56:49 +0000
+Reviewed-on: https://review.openstack.org/236594
+Project: openstack/sticks
+Branch: refs/heads/master
