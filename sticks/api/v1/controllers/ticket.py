@@ -21,10 +21,6 @@ import wsmeext.pecan as wsme_pecan
 
 from sticks.api.v1.datamodels import ticket as ticket_models
 from sticks import manager
-from sticks.openstack.common import log as logging
-
-
-LOG = logging.getLogger(__name__)
 
 
 class TicketsController(rest.RestController):

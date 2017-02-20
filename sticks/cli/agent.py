@@ -24,9 +24,6 @@ from sticks.openstack.common import log
 from sticks.openstack.common import service
 
 
-LOG = log.getLogger(__name__)
-
-
 def main():
 
     log.set_defaults(cfg.CONF.default_log_levels)

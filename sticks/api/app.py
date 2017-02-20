@@ -21,10 +21,7 @@ import pecan
 from sticks.api import auth
 from sticks.api import config as api_config
 from sticks.api import hooks
-from sticks.openstack.common import log as logging
 
-
-LOG = logging.getLogger(__name__)
 
 auth_opts = [
     cfg.StrOpt('api_paste_config',

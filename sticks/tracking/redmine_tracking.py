@@ -18,10 +18,7 @@ from oslo.config import cfg
 import redmine
 
 from sticks.api.v1.datamodels import ticket as ticket_models
-from sticks.openstack.common import log
 from sticks import tracking
-
-LOG = log.getLogger(__name__)
 
 redmine_group = cfg.OptGroup(name='redmine', title='Redmine plugin options')
 

@@ -24,10 +24,7 @@ from oslo import messaging
 
 from sticks.client import keystone_client
 from sticks.openstack.common.gettextutils import _  # noqa
-from sticks.openstack.common import log
 
-
-LOG = log.getLogger(__name__)
 
 sticks_role_opt = [
     cfg.StrOpt('sticks_role_name', default='sticks',

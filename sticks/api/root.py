@@ -20,10 +20,7 @@ from wsme import types as wtypes
 import wsmeext.pecan as wsme_pecan
 
 from sticks.api.v1 import controllers as v1_api
-from sticks.openstack.common import log as logging
 
-
-LOG = logging.getLogger(__name__)
 
 VERSION_STATUS = wtypes.Enum(wtypes.text, 'EXPERIMENTAL', 'STABLE')
 
