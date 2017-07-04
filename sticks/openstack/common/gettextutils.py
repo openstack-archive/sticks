@@ -323,7 +323,7 @@ def get_available_languages(domain):
                'zh_Hant_HK': 'zh_HK',
                'zh_Hant': 'zh_TW',
                'fil': 'tl_PH'}
-    for (locale, alias) in six.iteritems(aliases):
+    for (locale, alias) in aliases.items():
         if locale in language_list and alias not in language_list:
             language_list.append(alias)
 
@@ -374,7 +374,7 @@ def _translate_args(args, desired_locale=None):
         return tuple(translate(v, desired_locale) for v in args)
     if isinstance(args, dict):
         translated_dict = {}
-        for (k, v) in six.iteritems(args):
+        for (k, v) in args.items():
             translated_v = translate(v, desired_locale)
             translated_dict[k] = translated_v
         return translated_dict
