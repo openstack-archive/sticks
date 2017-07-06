@@ -15,7 +15,7 @@
 #
 
 from oslo.config import cfg
-import redmine
+import redminelib
 
 from sticks.api.v1.datamodels import ticket as ticket_models
 from sticks.openstack.common import log
@@ -51,7 +51,7 @@ class RedmineTracking(tracking.TrackingBase):
         super(RedmineTracking, self).__init__()
         super(RedmineTracking, self).subscribe_event(
             self._ROLE_ASSIGNMENT_CREATED)
-        self.redmine = redmine.Redmine(cfg.CONF.redmine.redmine_url,
+        self.redmine = redminelib.Redmine(cfg.CONF.redmine.redmine_url,
                                        username=cfg.CONF.
                                        redmine.redmine_login,
                                        password=cfg.CONF.
